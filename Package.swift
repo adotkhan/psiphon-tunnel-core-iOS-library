@@ -12,7 +12,8 @@ let package = Package(
         .library(name: "PsiphonTunnel", targets: ["PsiphonTunnel"]),
     ],
     targets: [
-        .target(name: "PsiphonTunnel"),
-        .binaryTarget(name: "PsiphonTunnel", path: "Frameworks/PsiphonTunnel.xcframework")
+        .binaryTarget(name: "PsiphonTunnel",
+                      url: "https://github.com/adotkhan/psiphon-tunnel-core-iOS-library/blob/master/Frameworks/PsiphonTunnel.xcframework.zip",
+                      checksum: "63cc259e0cd7851c8bc082f28ef007f18f93033f9974a5062c42e5248c56ae51")
     ]
 )
